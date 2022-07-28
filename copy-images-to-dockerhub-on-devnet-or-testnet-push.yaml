@@ -11,7 +11,6 @@ permissions:
 
 jobs:
   copy-images-to-docker-hub:
-    uses: ./.github/workflows/copy-images-to-dockerhub.yaml
     with:
       image_tag_prefix: ${{ github.ref_name }}
     secrets: inherit
